@@ -15,12 +15,11 @@ This external tree will work with the latest buildroot version, which is not yet
 Download buildroot, then git clone this external tree, cd to the buildroot top level directory, then type these commands:
 
 ```
-make BR2_EXTERNAL=/path/to/MangoPi/external widora_mangopi_r3_defconfig -O=output/widora-mangopi-r3
+make BR2_EXTERNAL=/path/to/MangoPi/external widora_mangopi_r3_defconfig O=output/widora-mangopi-r3
 make
 ```
 
 If you have a multi-cores machine, you can try passing -j to the second make invocation to accelerate the build.
-
 
 ## Current problems ##
 
