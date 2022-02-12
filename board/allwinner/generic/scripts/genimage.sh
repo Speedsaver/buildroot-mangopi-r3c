@@ -12,7 +12,7 @@ OUTPUT_NAME="kernel.itb"
     exit 1
 }
 
-cp "${BR2_EXTERNAL_MangoPi_PATH}/board/allwinner/generic/kernel.its" "${BINARIES_DIR}"
+cp "${BR2_EXTERNAL_MANGOPI_PATH}/board/allwinner/generic/kernel.its" "${BINARIES_DIR}"
 cd "${BINARIES_DIR}"
 "${MKIMAGE}" -f ${IMAGE_ITS} ${OUTPUT_NAME}
 rm ${IMAGE_ITS}
@@ -22,7 +22,7 @@ cp splash.bmp "${BINARIES_DIR}/"
 
 cd "${STARTDIR}/"
 
-${BR2_EXTERNAL_MangoPi_PATH}/board/allwinner/generic/scripts/mknanduboot.sh ${1}/${2} ${1}/u-boot-sunxi-with-nand-spl.bin
-support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MangoPi_PATH}/board/allwinner/generic/genimage-sdcard.cfg"
-support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MangoPi_PATH}/board/allwinner/generic/genimage-nor.cfg"
-support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MangoPi_PATH}/board/allwinner/generic/genimage-nand.cfg"
+${BR2_EXTERNAL_MANGOPI_PATH}/board/allwinner/generic/scripts/mknanduboot.sh ${1}/${2} ${1}/u-boot-sunxi-with-nand-spl.bin
+support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MANGOPI_PATH}/board/allwinner/generic/genimage-sdcard.cfg"
+support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MANGOPI_PATH}/board/allwinner/generic/genimage-nor.cfg"
+support/scripts/genimage.sh ${1} -c "${BR2_EXTERNAL_MANGOPI_PATH}/board/allwinner/generic/genimage-nand.cfg"
