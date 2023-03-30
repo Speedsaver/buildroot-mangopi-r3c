@@ -16,7 +16,11 @@ Download buildroot, then git clone this external tree, cd to the buildroot top l
 
 ```
 make BR2_EXTERNAL=/path/to/buildroot-mangopi-r3c widora_mangopi_r3_defconfig O=output/widora-mangopi-r3
+```
+```
 cd output/widora-mangopi-r3
+```
+```
 make
 ```
 
