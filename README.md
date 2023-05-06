@@ -28,7 +28,7 @@ If you have a multi-cores machine, you can try passing -j to the second make inv
 
 ## Current problems ##
 
-Currently, usb DFU is totally broken, so it is impossible to flash the nand flash. Micro sd card boot doesn't seem to boot up on its own and you need to pass these commands to boot up:
+Micro sd card boot doesn't seem to boot up on its own and you need to pass these commands to boot up:
 
 ```
 load mmc 0:2 ${kernel_addr_r} kernel.itb
