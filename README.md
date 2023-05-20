@@ -28,6 +28,8 @@ If you have a multi-cores machine, you can try passing -j to the second make inv
 
 ## Current problems ##
 
+Currently, usb DFU is totally broken, so it is impossible to flash the nand flash ("## Error: "dfu_nand" not defined" when trying to run dfu_nand)
+
 Micro sd card boot doesn't seem to boot up on its own and you need to pass these commands to boot up:
 
 ```
