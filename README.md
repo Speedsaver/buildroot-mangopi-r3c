@@ -10,7 +10,7 @@ This external tree contains the support for Widora MangoPi R3C revision only. Th
 
 ## How to build ##
 
-Tested working with Buildroot 2023.02.1. Note login is root, and no password is required
+Tested working with Buildroot 2023.02.2. Note login is root, and no password is required
 
 Download buildroot, then git clone this external tree, cd to the buildroot top level directory, then type these commands:
 
